@@ -87,5 +87,17 @@ Use the step-by-step instructions below to add code where indicated by the numbe
 
 ![image](https://user-images.githubusercontent.com/112348240/199876060-a0bcfb6e-efed-4a8f-ac5a-6de5277175e5.png)
 
+# Deliverable 3: A written report for the PyBer analysis (20 points)
+## Deliverable 3 Instructions
+Use your repository README file to write your analysis of how to address any disparities in the ride-sharing data among the city types.
+
+The analysis should contain the following:
+
+**Overview of the analysis:** Explain the purpose of the new analysis.
+
+**Results:** Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types.
+
+**Summary:** Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types.
+
 
 
