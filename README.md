@@ -37,8 +37,55 @@
   
   ![image](https://user-images.githubusercontent.com/112348240/199873444-9b617434-0ab7-497c-8b53-ee35b1230f99.png)
   
+  *9. **In Step 7,** use the provided code snippet to remove the index name ("type") from the PyBer summary DataFrame.
+
+  *10.**In Step 8,** format the columns of the Pyber summary DataFrame to look like this:
+    
     *See screenshot below after I format to look the way it was expected:*
     
   ![image](https://user-images.githubusercontent.com/112348240/199873511-c1d9f3d2-17a9-4d78-a63a-cd3f6193e8a0.png)
+  
+# Deliverable 2: A multiple-line chart of total fares for each city type
+## Deliverable 2 Instructions
+Using your Pandas skills and two new functions, pivot() andresample(), create a multiple-line graph that shows the total fares for each week by city type.
+Use the step-by-step instructions below to add code where indicated by the numbered comments in the starter code file:
+
+*1. **In Step 1,** create a new DataFrame with multiple indices using the groupby() function on the "type" and "date" columns of the pyber_data_df DataFrame, then apply the sum() method on the "fare" column to show the total fare amount for each date.
+
+![image](https://user-images.githubusercontent.com/112348240/199874837-9888067b-a858-4696-b752-5a36549e2ac9.png)
+![image](https://user-images.githubusercontent.com/112348240/199875010-41ec6ee6-db4b-4897-9a68-efccf5a592ba.png)
+
+
+*2. **In Step 2,** use the provided code snippet to reset the index. This is needed to use the pivot() function in the next step (Step 3).
+
+![image](https://user-images.githubusercontent.com/112348240/199875202-c45b2623-f7af-4648-9285-0f22e16a773f.png)
+
+![image](https://user-images.githubusercontent.com/112348240/199875303-4129612a-4bb2-4d12-a834-7152f0d6a378.png)
+
+
+*3. **In Step 3,** use the pivot() function to convert the DataFrame from the previous step so that the index is the "date," each column is a city "type," and the values are the "fare."
+
+  - After this step, you’ll see that each cell has the total fare for the date and time, as shown in the following image.
+  
+  **Note:** In cells where there is no fare to be summed for that row, the cell will be filled with NaNs.
+  
+  ![image](https://user-images.githubusercontent.com/112348240/199875479-af506e31-1afe-4218-8828-f932247b52ee.png)
+  
+*4. **In Step 4,** create a new DataFrame by using the loc method on the following date range: 2019-01-01 through 2019-04-28.
+
+*5. **In Step 5,** use the provided code snippet to reset the index of the DataFrame from the previous step (Step 4) to a datetime data type. This is necessary to use the resample() method in Step 7.
+
+
+*6. **In Step 6,** use the provided code snippet, df.info(), to check that the "date" is a datetime data type.
+
+*7. **In Step 7,** create a new DataFrame by applying the resample() function to the DataFrame you modified in Step 5. Resample the data in weekly bins, then apply the sum() method to get the total fares for each week.
+  - After creating the resampled DataFrame in Step 7, confirm that your DataFrame looks like this:
+
+*8. **Finally, in Step 8,** graph the resampled DataFrame from Step 7 using the object-oriented interface method and the df.plot() method, as well as the Matplotlib "fivethirtyeight" graph style code snippet provided in the starter code. Annotate the y-axis label and the title, then use the appropriate code to save the figure as PyBer_fare_summary.png in your "analysis" folder.
+
+  - Confirm that your multiple-line chart looks like the following image, where each week is a peak or dip in the line graphs.
+
+![image](https://user-images.githubusercontent.com/112348240/199876060-a0bcfb6e-efed-4a8f-ac5a-6de5277175e5.png)
+
 
 
