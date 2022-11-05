@@ -73,31 +73,67 @@ Use the step-by-step instructions below to add code where indicated by the numbe
   
 *4. **In Step 4,** create a new DataFrame by using the loc method on the following date range: 2019-01-01 through 2019-04-28.
 
+![image](https://user-images.githubusercontent.com/112348240/200093819-49764198-9c07-4d31-a797-917c0d18a953.png)
+
+![image](https://user-images.githubusercontent.com/112348240/200093860-2bc00cf0-5840-4618-94f1-973114cc4d1a.png)
+
+
 *5. **In Step 5,** use the provided code snippet to reset the index of the DataFrame from the previous step (Step 4) to a datetime data type. This is necessary to use the resample() method in Step 7.
+
+![image](https://user-images.githubusercontent.com/112348240/200093894-304aba2e-9aeb-48af-aba4-2d7c9c8d7d72.png)
+
+![image](https://user-images.githubusercontent.com/112348240/200093903-52fcb381-59c4-42f3-9c3a-8fba3d46d44f.png)
 
 
 *6. **In Step 6,** use the provided code snippet, df.info(), to check that the "date" is a datetime data type.
 
+![image](https://user-images.githubusercontent.com/112348240/200093922-f5c89cc4-c7ae-4e95-8264-b4cde46a7668.png)
+
 *7. **In Step 7,** create a new DataFrame by applying the resample() function to the DataFrame you modified in Step 5. Resample the data in weekly bins, then apply the sum() method to get the total fares for each week.
-  - After creating the resampled DataFrame in Step 7, confirm that your DataFrame looks like this:
+
+![image](https://user-images.githubusercontent.com/112348240/200093989-fb3068d4-5c75-4ae6-b766-29b62f4d79a1.png)
+
+  - After creating the resampled DataFrame in Step 7, the DataFrame looks like image on the homework page:
+  
+  ![image](https://user-images.githubusercontent.com/112348240/200094029-028389a3-629a-44ef-95b5-3a260dc03df2.png)
 
 *8. **Finally, in Step 8,** graph the resampled DataFrame from Step 7 using the object-oriented interface method and the df.plot() method, as well as the Matplotlib "fivethirtyeight" graph style code snippet provided in the starter code. Annotate the y-axis label and the title, then use the appropriate code to save the figure as PyBer_fare_summary.png in your "analysis" folder.
 
-  - Confirm that your multiple-line chart looks like the following image, where each week is a peak or dip in the line graphs.
+![image](https://user-images.githubusercontent.com/112348240/200094065-13b40241-c31b-4835-b8f2-7353379ea8a8.png)
+
+
+  - Confirm that my multiple-line chart looks like the image showing on the homework, where each week is a peak or dip in the line graphs.
 
 ![image](https://user-images.githubusercontent.com/112348240/199876060-a0bcfb6e-efed-4a8f-ac5a-6de5277175e5.png)
 
-# Deliverable 3: A written report for the PyBer analysis (20 points)
+# Deliverable 3: A written report for the PyBer analysis
+
 ## Deliverable 3 Instructions
 Use your repository README file to write your analysis of how to address any disparities in the ride-sharing data among the city types.
 
 The analysis should contain the following:
 
-**Overview of the analysis:** Explain the purpose of the new analysis.
+# **Overview of the analysis:**
+  In this Project the idea was to analyze all three type of cities : rural, suburban and urban, the fare by ride as well as the amount of drivers on each one, since the data differs by city type and how those differences can be used by decision-makers at PyBer. ALso,visualize using the object-oriented interface method and generate a "fivethirtyeight" graph style.
 
-**Results:** Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types.
-
-**Summary:** Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types.
+# **Results:** 
+  Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types.
+  After running our starter code and using the correct syntax I have the following results:
+  
+    - They were 125 rides on rural cities and 1625 on urban ones,
+    
+    - The average fare per ride was cheaper on urban cities was around $24.53 as well as average fare per driver was around $16.57,
+    
+    - The average fare per driver on rural cities were very high it was around $55.49,
+    
+    - Urban cities has a large number of drivers, they were 2,405 drivers making a total fares as $39,854.38
+    
+    - For rural cities they werent no records during the period of time given for analysis which was from "2019-01-01":"2019-04-29" 
+   
+   In conclusion the most profitable cities are the urban ones, it is interesting to see if there is a way to recruit more drivers on rural cities. Look into possible sign on bonus for new drivers or any sort of incentives that well make the job more attractive.   
+ 
+# **Summary:** 
+  Well, first I believe there is so much information missing in order to provide an accurate recomendation. I think is necesary to have like the behaviorin this peoples for each type of cities, weather during the dates we are analyzing as well as other metrics that should be consider for example: gas prices, special events and so on. When we are able to collect all of that we will provide the most informative and visual recomendation with accurate and complete data.
 
 
 
